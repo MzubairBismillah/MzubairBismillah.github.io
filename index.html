@@ -1,33 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zubair-Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <style>
-*{
-    margin: 0;
-    padding: 0;
-}
-    body{
-background-color:#222258;
-color: white;
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #222258;
+        color: white;
+        font-family: 'Poppins',sans-serif;
+    }
+    nav{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: #2d2d97;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+        color:lavender;
+        font-size: 1.01rem;
+    }
+
+    .left{
+        font-size: 1.6rem;
+    }
+    .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 70px 0;
+    }
+    .leftSection >div{
+        font: 2rem;
+        
+    }
+    .right Section img{
+        width: 80%;
+        margin: 50px 0;
+    }
+    .yellow{
+        color: rgb(182, 182, 41);
     }
 </style>
 <body>
-<h1>my personal information</h1>
-<table>
-    <tr></tr>
-    <th>
-        NAME
-    </th>
-    <th>
-        AGE
-    </th>
-</tr>
-    
-</table>
-    
+    <header>
+        <nav>
+            <div class="left">zubair portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>                                                    
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi,My Name is <span class="yellow ">Zubair</span>
+            <div>
+                I'M a study and </div>
+                <div>web developer</div> 
+                <div>
+                i live in <i><q>Mitru</q></i>
+                </div>
+        </div>
+        <div class="rightSecton"> </div>
+        <img src="zu.png.png" alt="programmer">
+
+    </section>
+</main>
+
 </body>
+
 </html>
