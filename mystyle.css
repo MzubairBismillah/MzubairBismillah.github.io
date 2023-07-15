@@ -132,5 +132,5 @@ main .footer{
 }
 .footer{
     display: flex;
-    margin: 23px 24px;
+    padding: 23px 24px;
 }
