@@ -18,61 +18,119 @@
     body {
         background-color: #222258;
         color: white;
-        font-family: 'Poppins',sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
-    nav{
-        display:flex;
+
+    nav {
+        display: flex;
         justify-content: space-around;
         align-items: center;
         height: 80px;
         background-color: #2d2d97;
     }
-    nav ul{
+
+    nav ul {
         display: flex;
         justify-content: center;
 
     }
-    nav ul li{
+
+    nav ul li {
         list-style: none;
         margin: 0 23px;
     }
-    nav ul li a{
+
+    nav ul li a {
         text-decoration: none;
         color: white;
     }
-    nav ul li a:hover{
-        color:lavender;
+
+    nav ul li a:hover {
+        color: lavender;
         font-size: 1.01rem;
     }
 
-    .left{
+    .left {
         font-size: 1.6rem;
     }
-    .firstSection{
+
+    .firstSection {
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin: 70px 0;
     }
-    .leftSection >div{
+
+    .leftSection>div {
         font: 2rem;
-        
+
     }
-    .right Section img{
-        width: 80%;
+
+    .right Section img {
+        width: 50%;
         margin: 50px 0;
     }
-    .yellow{
+
+    .yellow {
         color: rgb(182, 182, 41);
     }
+    .element{
+        color: rgb(182, 182, 41);
+    }
+    .secondSection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+    .main .hr{
+        border: 0;
+        background-color: #232397;
+        height: 1.3px;
+        margin: 60px 68px;
+    }
+    .text-gray{
+        color:gray;
+    }
+    .secondSection box{
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+    .secondSection .vertical{
+        width: 93px;
+        height: 1px;
+        background-color: white;
+        margin: 0 100px;
+    }
+    .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+    }
+    .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+    }
+    .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+    }
 </style>
+
 <body>
     <header>
         <nav>
             <div class="left">zubair portfolio </div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>                                                    
+                    <li><a href="/">Home</a></li>
                     <li><a href="/">Services</a></li>
                     <li><a href="/">projects</a></li>
                     <li><a href="/">Contact me</a></li>
@@ -80,23 +138,55 @@
             </div>
         </nav>
     </header>
-<main>
-    <section class="firstSection">
-        <div class="leftSection">
-            Hi,My Name is <span class="yellow ">Zubair</span>
-            <div>
-                I'M a study and </div>
-                <div>web developer</div> 
-                <div>
-                i live in <i><q>Mitru</q></i>
-                </div>
-        </div>
-        <div class="rightSecton"> </div>
-        <img src="zu.png.png" alt="programmer">
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My Name is <span class="yellow ">Zubair</span>
+                <div> I'M a study and </div>
+                <span id="element"></span>
+                <div>  i live in <i><q>Mitru</q></i></div>
+            </div>
+            <div class="rightSecton"> </div>
+            <img src="zu.png.png" alt="programmer">
+<hr class="main">
+        </section>
+        <section class="secondSection">
+            <span class="text-gray"> what i have done for</span>
+            <h1>Work Experience </h1>
 
-    </section>
-</main>
-
+            <div class="box"></div>
+            <div class="vertical">
+                <img class="image-top"   src="program.png" alt="nothing">
+            <div class="vertical-title">Study inter(2020-2022)</div>
+            <div class="vertical-desc">i study in Ics with good marks.in this subject,i study C++</div>
+            </div>
+            <div class="box"></div>
+            <div class="vertical">
+                <img class="image-top"   src="program.png" alt="nothing">
+            <div class="vertical-title">BSCS(2022-present)</div>
+            <div class="vertical-desc">i get good Experience in Python and Java</div>
+            </div>
+            <div class="box"></div>
+            <div class="vertical">
+                <img class="image-top"   src="program.png" alt="nothing">
+            <div class="vertical-title">HTML Developer(2023-present)</div>
+            <div class="vertical-desc">i have basic silk in HTML. MY czn give me many advices</div>
+            </div>
+            <div class="box"></div>
+            <div class="vertical">
+                <img class="image-top"   src="program.png" alt="nothing">
+            <div class="vertical-title">Video Editor(2019-present)</div>
+            <div class="vertical-desc">i am good video Editor.i Editor many video like 'CITYS' 'villages' 'firends' 'School docomentrys'.Also personal video many more</div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Web</i> Developer', '&Video Editor.'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 
 </html>
