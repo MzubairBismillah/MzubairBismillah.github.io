@@ -90,10 +90,10 @@ nav ul li a:hover {
 }
 
 .secondSection .vertical {
-    width: 1190px;
+    width: 934px;
     height: 0.1px;
     background-color: white;
-    margin: 0px -49px;
+    margin: 1px 0px
 }
 
 .image-top {
@@ -111,9 +111,9 @@ nav ul li a:hover {
 
 .vertical-desc {
     position: relative;
-    top: 86px;
-    color: rgb(255, 242, 242);
-    width: 150px;
+    top: 26px;
+    color: #a3a2a2;
+    width: 140px;
     font-size: 9px;
 }
 .img-right {
