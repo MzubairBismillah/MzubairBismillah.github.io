@@ -127,10 +127,20 @@ nav div .image-first{
     margin: 16px -107px;
 }
 main .footer{
-    background-color: aqua;
-    height:233px;
+    background-color: #332a68;
+    height: 300px;
 }
 .footer{
     display: flex;
-    padding: 23px 24px;
+    margin: 74px -2px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footer >div{
+    width: 123px;
+}
+footer .footerright{
+    text-align: center;
+    color:gray;
+    padding: 12px 0;
 }
