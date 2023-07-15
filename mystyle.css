@@ -41,6 +41,9 @@ nav ul li a:hover {
 .left {
     font-size: 1.6rem;
 }
+.img-right{
+    width: auto;
+}
 
 .firstSection {
     display: flex;
