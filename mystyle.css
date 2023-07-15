@@ -81,7 +81,7 @@ nav ul li a:hover {
     color: gray;
 }
 
-.secondSection box {
+.secondSection .box {
     background-color: white;
     width: 80vw;
     height: 2px;
