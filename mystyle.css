@@ -128,7 +128,6 @@ nav div .image-first{
 }
 footer{
     background-color: #332a68;
-    height: 300px;
 }
 .footer{
     display: flex;
@@ -137,12 +136,12 @@ footer{
     flex-direction: row;
 }
 .footer >div{
-    width: 123px;
+    width: 100px;
 }
 footer .footerright{
     text-align: center;
     color:gray;
-    padding: 12px 0;
+    ;
 }
 .footer-second ul li:hover{
     color: lavender;
