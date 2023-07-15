@@ -144,3 +144,15 @@ footer .footerright{
     color:gray;
     padding: 12px 0;
 }
+.footer-second ul li:hover{
+    color: lavender;
+    font-size: 1.01rem;
+}
+.footer-third ul li:hover{
+    color: lavender;
+    font-size: 1.01rem;
+}
+.footer-fourth address:hover{
+    color: lavender;
+    font-size: 1.01rem;
+}
