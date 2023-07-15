@@ -49,8 +49,8 @@ nav ul li a:hover {
     margin: 70px 0;
 }
 
-.leftSection>div {
-    font: 2rem;
+.leftSection div {
+    font-size: 2rem;
 
 }
 .yellow {
@@ -90,10 +90,10 @@ nav ul li a:hover {
 }
 
 .secondSection .vertical {
-    width: 93px;
-    height: 1px;
+    width: 1146px;
+    height: 0.1px;
     background-color: white;
-    margin: 0 100px;
+    margin: 0 -21px;
 }
 
 .image-top {
@@ -116,9 +116,6 @@ nav ul li a:hover {
     width: 150px;
     font-size: 9px;
 }
-
 .img-right {
     width: 180px;
-    margin: 16px -107px;
-
-}
+    margin: 16px -107px;}
