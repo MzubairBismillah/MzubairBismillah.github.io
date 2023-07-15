@@ -82,18 +82,18 @@ nav ul li a:hover {
 }
 
 .secondSection box {
-    background-color: white;
-    width: 80vw;
-    height: 2px;
-    margin: 56px 0;
+    background-color: #ffffff;
+    width: 81vw;
+    height: 1px;
+    margin: 46px 0;
     display: flex;
 }
 
 .secondSection .vertical {
-    width: 1190px;
-    height: 0.1px;
+    width: 307px;
+    height: -3.9px;
     background-color: white;
-    margin: 0px -49px;
+    margin: 2px 4px;
 }
 
 .image-top {
@@ -105,17 +105,18 @@ nav ul li a:hover {
 
 .vertical-title {
     position: relative;
-    top: 75px;
-    width: 150px;
+    top: -18px;
+    width: 206px;
 }
 
 .vertical-desc {
     position: relative;
-    top: 86px;
-    color: rgb(255, 242, 242);
-    width: 150px;
-    font-size: 9px;
+    top: 15px;
+    color: #b9afaf;
+    width: 173px;
+    font-size: 11px;
 }
 .img-right {
     width: 235px;
-    margin: 16px -107px;}
+    margin: 16px -107px;
+}
