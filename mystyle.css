@@ -128,11 +128,14 @@ nav div .image-first{
 }
 footer{
     background-color: #332a68;
+    height: 205px;
+    text-align: center;
+    table-layout: fixed;
 }
 .footer{
     display: flex;
     margin: 74px -2px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 .footer >div{
