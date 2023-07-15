@@ -124,4 +124,13 @@ nav div .image-first{
 }
 .img-right {
     width: 235px;
-    margin: 16px -107px;}
+    margin: 16px -107px;
+}
+.footer{
+    background-color: aqua;
+    height:233px;
+}
+.footer{
+    display: flex;
+    margin: 23px 24px;
+}
