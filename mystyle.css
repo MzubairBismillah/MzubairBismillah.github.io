@@ -41,8 +41,9 @@ nav ul li a:hover {
 .left {
     font-size: 1.6rem;
 }
-.image-right div{
-    width: 193px;
+nav div .image-first{
+    width: 70px;
+    margin: 8px 9px -2px -499px;
 }
 
 .firstSection {
