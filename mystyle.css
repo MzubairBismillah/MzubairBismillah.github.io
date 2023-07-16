@@ -63,7 +63,7 @@ nav div .image-first{
 .leftSection .btn{
     padding: 9px;
     background-color: #5a77a7;
-    color: #e3d1d1;
+    color:antiquewhite;
     border: 2px solid #120707;
     border-radius: 10px;
     font-size: 24px;
@@ -160,17 +160,17 @@ footer{
     ;
 }
 .footer-second ul li:hover{
-    color: lavender;
+    color:antiquewhite;
     font-size: 1.01rem;
     cursor: pointer;
 }
 .footer-third ul li:hover{
-    color: lavender;
+    color: antiquewhite;
     font-size: 1.01rem;
     cursor: pointer;
 }
 .footer-fourth address:hover{
-    color: lavender;
+    color: rgb(233, 232, 232);
     font-size: 0.98rem;
     cursor: pointer;
 }
