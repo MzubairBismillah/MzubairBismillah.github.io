@@ -152,7 +152,7 @@ footer{
 }
 .footer >div{
     width: 278px;
-    margin: 72px
+    margin: 46px;
 }
 .footerright{
     text-align: center;
@@ -171,6 +171,6 @@ footer{
 }
 .footer-fourth address:hover{
     color: lavender;
-    font-size: 1.01rem;
+    font-size: 0.98rem;
     cursor: pointer;
 }
