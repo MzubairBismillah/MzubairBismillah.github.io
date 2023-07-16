@@ -159,6 +159,15 @@ footer{
     color:gray;
     ;
 }
+.footer-second ul li a{
+    color:antiquewhite;
+    font-size: 1.01rem;
+}
+.footer-third ul li a{
+    color:antiquewhite;
+    font-size: 1.01rem;
+}
+
 .footer-second ul li:hover{
     color:antiquewhite;
     font-size: 1.01rem;
