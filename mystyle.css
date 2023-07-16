@@ -30,11 +30,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: antiquewhite;
 }
 
 nav ul li a:hover {
-    color: lavender;
+    color:antiquewhite;
     font-size: 1.01rem;
 }
 
