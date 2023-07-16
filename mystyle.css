@@ -57,13 +57,16 @@ nav div .image-first{
     font-size: 2rem;
 
 }
+.leftSection .button{
+    padding: 63px;
+}
 .leftSection .btn{
-    padding: 12px;
-    background-color: #1e2126;
-    color: white;
-    border: 2ox solid white;
-    border-radius: 6px;
-    font-size: 20px;
+    padding: 9px;
+    background-color: #5a77a7;
+    color: #e3d1d1;
+    border: 2px solid #120707;
+    border-radius: 10px;
+    font-size: 24px;
     cursor: pointer;
 }
 .yellow {
