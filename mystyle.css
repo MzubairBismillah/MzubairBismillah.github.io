@@ -77,7 +77,7 @@ nav div .image-first{
     border-radius: 10px;
     font-size: 24px;
     cursor: pointer;
-    float: right;
+    float: left;
 }
 .yellow {
     color: rgb(182, 182, 41);
