@@ -60,16 +60,7 @@ nav div .image-first{
 .leftSection .button{
     padding: 63px;
 }
-.leftSection .btn1{
-    padding: 9px;
-    background-color: #5a77a7;
-    color:antiquewhite;
-    border: 2px solid #120707;
-    border-radius: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-.leftSection .btn2{
+.leftSection .btn{
     padding: 9px;
     background-color: #5a77a7;
     color:antiquewhite;
