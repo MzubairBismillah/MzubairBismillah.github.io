@@ -104,7 +104,7 @@
         <footer class="footer">
             <div class="footer-first">
                 <h4>Get your location</h4>
-                <button onclick="getLocation()">MY location</button>
+                <button onclick="getWeatherByLocation()">MY location</button>
                 <p id="demo">
 
                 </p>
@@ -146,7 +146,7 @@
             typeSpeed: 100,
         });
     </script>
-    <script>
+   <!--<script>
         const myElement = document.getElementById("demo");
          function getLocation(){
             if(navigator.geolocation){
@@ -160,7 +160,36 @@
                 myElement.innerHTML="Latitude:" + position.coords.latitude +
                 "<br>Longitude:" + position.coords.longitude;
             }
-    </script>
+    </script> -->
+    <script>
+    const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key from OpenWeatherMap
+
+function getWeatherByLocation() {
+  if (!navigator.geolocation) {
+    console.error('Geolocation is not supported by your browser.');
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(position => {
+    const { latitude, longitude } = position.coords;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const city = data.name;
+        const weatherDescription = data.weather[0].description;
+        const temperature = (data.main.temp - 273.15).toFixed(2);
+        console.log(`Current weather in ${city}: ${weatherDescription}. Temperature: ${temperature}°C`);
+      })
+      .catch(error => console.error('Error fetching weather:', error));
+  }, error => {
+    console.error('Error getting your location:', error.message);
+  });
+}
+
+getWeatherByLocation();
+</script>
 </body>
 
 </html>
