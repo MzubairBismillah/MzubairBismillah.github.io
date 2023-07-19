@@ -105,6 +105,9 @@
             <div class="footer-first">
                 <h4>Get your location</h4>
                 <button onclick="getLocation()">MY location</button>
+                <p id="demo">
+
+                </p>
                 <h3>zubair portfolio</h3>
             </div>
             <div class="footer-second">
@@ -146,16 +149,16 @@
     <script>
         const myElement = document.getElementById("demo");
          function getLocation(){
-            try(navigator.geolocation){
+            if(navigator.geolocation){
                 navigator.geolocation.getCurrentPosition(showPosition);
-            }catch{
+            }else{
                 myElement.innerHTML="You Disallow location icon";
             }
         }
 
             function showPosition(position){
                 myElement.innerHTML="Latitude:" + position.coords.latitude +
-                "<br>longitude:" position.coords.longitude;
+                "<br>Longitude:" + position.coords.longitude;
             }
     </script>
 </body>
