@@ -34,15 +34,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: antiquewhite;
+    color:antiquewhite;
     font-size: 1.01rem;
 }
 
 .left {
     font-size: 1.6rem;
 }
-
-nav div .image-first {
+nav div .image-first{
     width: 70px;
     margin: 8px 9px -2px -499px;
 }
@@ -53,35 +52,36 @@ nav div .image-first {
     align-items: center;
     margin: 70px 0;
 }
+.leftSection .profile{
+    width:10rem;
+    padding:1px;
+    border-radius: 12px 34px;
+    outline: 4px dotted;
+}
+.profile .image{
+    width: 100%;
+    border-radius: 0px 34px;
 
-.profile .image {
-    width: 9rem;
-    float: left;
-    outline: 3px solid rgb(169 169 79);
-    margin: 1px -172px;
-    border-radius: 250px 76px;
+
 }
 
 .leftSection div {
     font-size: 2rem;
 
 }
-
-.leftSection .button {
+.leftSection .button{
     padding: 63px;
 }
-
-.leftSection .btn {
+.leftSection .btn{
     padding: 9px;
     background-color: #5a77a7;
-    color: antiquewhite;
+    color:antiquewhite;
     border: 2px solid #120707;
     border-radius: 10px;
     font-size: 24px;
     cursor: pointer;
     float: left;
 }
-
 .yellow {
     color: rgb(182, 182, 41);
 }
@@ -97,8 +97,7 @@ nav div .image-first {
     margin: auto;
     height: 80vh;
 }
-
-.secondSection h1 {
+.secondSection h1{
     font-size: 1.9rem;
 }
 
@@ -136,7 +135,7 @@ nav div .image-first {
 }
 
 .vertical-title {
-    position: relative;
+   position: relative;
     top: -18px;
     width: 206px;
 }
@@ -148,84 +147,68 @@ nav div .image-first {
     width: 151px;
     font-size: 10px
 }
-
 .img-right {
     width: 235px;
     margin: 16px -107px;
 }
-
-footer {
+footer{
     background-color: #332a68;
     height: 205px;
     text-align: center;
     table-layout: fixed;
 }
-
-.footer {
+.footer{
     display: flex;
     margin: 74px -2px;
     justify-content: space-evenly;
     flex-direction: row;
 }
-
-.footer>div {
+.footer >div{
     width: 278px;
     margin: 46px;
 }
-
-.footerright {
+.footerright{
     text-align: center;
-    color: gray;
+    color:gray;
     ;
 }
-
 .footer-second ul li a {
-    color: antiquewhite;
+    color:antiquewhite;
     font-size: 1.01rem;
 }
-
 .footer-third ul li a {
-    color: antiquewhite;
+    color:antiquewhite;
     font-size: 1.01rem;
 }
 
-.footer-second ul li a:hover {
+.footer-second ul li a:hover{
+    color:antiquewhite;
+    font-size: 1.01rem;
+    cursor: pointer;
+}
+.footer-third ul li:hover{
     color: antiquewhite;
     font-size: 1.01rem;
     cursor: pointer;
 }
-
-.footer-third ul li:hover {
-    color: antiquewhite;
-    font-size: 1.01rem;
-    cursor: pointer;
-}
-
-.footer-fourth address:hover {
+.footer-fourth address:hover{
     color: rgb(233, 232, 232);
     font-size: 0.98rem;
     cursor: pointer;
 }
-
 @media only screen and (max-width:500px) {
-
     /* For mobile phones: */
-    .menu,
-    .main,
-    .right {
-        width: 100%;
+    .menu, .main, .right {
+      width: 100%;
     }
-}
-
-@media only screen and (max-width:800px) {
-
+  }
+  @media only screen and (max-width:800px) {
     /* For tablets: */
     .main {
-        width: 80%;
-        padding: 0;
+      width: 80%;
+      padding: 0;
     }
-
     .right {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
