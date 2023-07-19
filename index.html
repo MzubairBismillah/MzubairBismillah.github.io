@@ -86,8 +86,25 @@
                 </div>
             </div>
         </section>
+        
+        <section class="content" id="content">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="email" placeholder="Email address">
+                </div>
+
+            </form>
+        </section>
         <footer class="footer">
             <div class="footer-first">
+                <h4>Get your location</h4>
+                <button onclick="getLocation()">MY location</button>
                 <h3>zubair portfolio</h3>
             </div>
             <div class="footer-second">
@@ -125,6 +142,21 @@
             strings: ['Web Developer', '&amp;Video Editor.'],
             typeSpeed: 100,
         });
+    </script>
+    <script>
+        const myElement = document.getElementById("demo");
+         function getLocation(){
+            try(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }catch{
+                myElement.innerHTML="You Disallow location icon";
+            }
+        }
+
+            function showPosition(position){
+                myElement.innerHTML="Latitude:" + position.coords.latitude +
+                "<br>longitude:" position.coords.longitude;
+            }
     </script>
 </body>
 
