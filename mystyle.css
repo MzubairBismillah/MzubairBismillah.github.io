@@ -52,17 +52,12 @@ nav div .image-first{
     align-items: center;
     margin: 70px 0;
 }
-.leftSection .profile{
-    width:10rem;
-    padding:1px;
-    border-radius: 12px 34px;
-    outline: 4px dotted;
-}
 .profile .image{
-    width: 100%;
+    width: 10rem;
+    float: left;
+    outline: 4px dotted yellow;
+    margin: -17px -175px;
     border-radius: 0px 34px;
-
-
 }
 
 .leftSection div {
