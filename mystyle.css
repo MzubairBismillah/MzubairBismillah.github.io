@@ -55,7 +55,7 @@ nav div .image-first{
 .profile .image{
     width: 10rem;
     float: left;
-    outline: 4px dotted yellow;
+    outline: 4px dotted rgb(252, 252, 138);
     margin: -17px -175px;
     border-radius: 0px 34px;
 }
