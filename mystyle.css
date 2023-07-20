@@ -225,9 +225,10 @@ footer {
 
 }
 
-.contact .h2 {
-    margin-bottom: 3rem;
+.contact h2 {
+    margin-bottom: 2rem;
     text-align: center;
+    font-size: 2rem;
 
 }
 
@@ -241,21 +242,21 @@ footer {
 .contact form .input-box {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .contact form .input-box input,
 .contact form textarea {
-    width: 100%;
+    width: 94%;
     padding: 1.5rem;
     font-size: 1.6rem;
     color: #0f5ad1;
     background-color: #113369;
-    border-radius: .8rem;
-    margin: .7rem 0;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
 }
 .contact form .input-box input{
-    width: 49%;
+    width: 45%;
 }
 .contact form textarea {
     resize: none;
