@@ -7,6 +7,7 @@ body {
     background-color: #222258;
     color: white;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 nav {
@@ -93,9 +94,9 @@ nav div .image-first {
 }
 
 .secondSection {
-    max-width: 80vw;
+    max-width: 73vw;
     margin: auto;
-    height: 80vh;
+    height: 38vw
 }
 
 .secondSection h1 {
@@ -153,6 +154,32 @@ nav div .image-first {
     width: 235px;
     margin: 16px -107px;
 }
+.third-section{
+    width: 100%;
+    height: 50vw;
+}
+.head4{
+    text-align: center;
+    width: 100%;
+    color: rgb(163, 163, 23);
+    font-size: 2rem;
+
+}
+.table{
+    font-family: auto;
+    border-collapse: unset;
+    width: 79%;
+    margin: auto;
+}
+th,td{
+    border: 1px solid white;
+    text-align: center;
+    padding: 38px 31px;
+}
+th{
+    color:#c1ab20;
+    font-size: x-large;
+}
 
 footer {
     background-color: #332a68;
@@ -163,7 +190,7 @@ footer {
 
 .footer {
     display: flex;
-    margin: 74px -2px;
+    margin: 62px 74px;
     justify-content: space-evenly;
     flex-direction: row;
 }
@@ -208,21 +235,25 @@ footer {
 }
 
 .btn1 {
-    display: inline-block;
+    display:inline-block ;
     padding: 1rem 2.8rem;
     background: #113369;
     border-radius: 4rem;
     box-shadow: 0 0 1rem #0f5ad1;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: rgb(233, 201, 201);
-    letter-spacing: 1rem;
+    letter-spacing: .3rem;
     font-weight: 600;
     transition: .5s ease;
+    margin: 10px 400px;
 }
 
 .btn1.hover {
     box-shadow: none;
 
+}
+.contact{
+    margin: 111px;
 }
 
 .contact h2 {
@@ -232,7 +263,7 @@ footer {
 
 }
 
-.contact form {
+.span .contact form {
     max-width: 50rem;
     margin: 1rem auto;
     text-align: center;
@@ -247,17 +278,19 @@ footer {
 
 .contact form .input-box input,
 .contact form textarea {
-    width: 94%;
+    width: 95%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: #0f5ad1;
+    color: #ffffff;
     background-color: #113369;
     border-radius: 0.8rem;
-    margin: 0.7rem 0;
+    margin: .7rem 0;
 }
-.contact form .input-box input{
+
+.contact form .input-box input {
     width: 45%;
 }
+
 .contact form textarea {
     resize: none;
 
