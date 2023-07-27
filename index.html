@@ -37,14 +37,14 @@
                 <div> I'M a student and </div>
                 <span id="element"></span>
                 <div> i live in <i><q> Jandiranwala Mitru
-                <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn"><a
-                            href="https://github.com/MzubairBismillah/MzubairBismillah.github.io.git">Visit
-                            Github</a>
-                    </button>
+                            <div class="buttons">
+                                <button class="btn">Download Resume</button>
+                                <button class="btn"><a
+                                        href="https://github.com/MzubairBismillah/MzubairBismillah.github.io.git">Visit
+                                        Github</a>
+                                </button>
+                            </div>
                 </div>
-            </div>
             </div>
             <div class="rightSecton"> </div>
             <img src="zu.png.png" alt="programmer" class="img-right">
@@ -88,7 +88,7 @@
         </section>
         <hr>
 
-        <section class="third-section" >
+        <section class="third-section">
             <h4 class="head4">Education</h4>
             <table class="table">
                 <tr>
@@ -128,8 +128,7 @@
             <h2 class="heading">Contact <span>Me</span></h2>
             <form action="#">
                 <div class="input-box">
-                    <input 
-                    type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Full Name">
                     <input type="email" placeholder="Email address">
                 </div>
                 <div class="input-box">
@@ -137,10 +136,35 @@
                     <input type="text" placeholder="Email Subject">
                 </div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Submit Message" class="btn1" >
+                <input type="submit" value="Submit Message" class="btn1">
             </form>
         </section>
         <hr>
+
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="enter your name" spellcheck="false">
+                <button><img src="images.png"></button>
+            </div>
+
+            <div class="weather">
+                <img src="images/rain.png" class="weather-icon">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">Mitru</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png">
+                    </div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                    <div class="col">
+                        <img src="images/wind.png">
+                    </div>
+                    <p class="wind">15 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
             <div class="footer-first">
                 <h4>Get your location</h4>
@@ -152,7 +176,7 @@
             </div>
             <div class="footer-second">
                 <ul>
-                    <li><a href="https://www.facebook.com/roman.reign.7923030" target="_blank" >Fackbook</a></li>
+                    <li><a href="https://www.facebook.com/roman.reign.7923030" target="_blank">Fackbook</a></li>
                     <li><a href="https://twitter.com/muhamma22715948" target="_blank"> Twitter</a></li>
                     <li><a href="muhammad.zubair010303@gmail.com" target="_blank">Gmail</a></li>
                 </ul>
@@ -188,20 +212,20 @@
     </script>
     <script>
         const myElement = document.getElementById("demo");
-         function getLocation(){
-            if(navigator.geolocation){
+        function getLocation() {
+            if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
-            }else{
-                myElement.innerHTML="You Disallow location icon";
+            } else {
+                myElement.innerHTML = "You Disallow location icon";
             }
         }
 
-            function showPosition(position){
-                myElement.innerHTML="Latitude:" + position.coords.latitude +
+        function showPosition(position) {
+            myElement.innerHTML = "Latitude:" + position.coords.latitude +
                 "<br>Longitude:" + position.coords.longitude;
-                
-            }
-    </script> 
+
+        }
+    </script>
 </body>
 
 </html>
