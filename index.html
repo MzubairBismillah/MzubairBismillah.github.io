@@ -150,7 +150,7 @@
             <div class="weather">
                 <img src="images/rain.png" class="weather-icon">
                 <h1 class="temp">22°C</h1>
-                <h2 class="city">Mitru</h2>
+                <h2 class="city">lahore</h2>
                 <div class="details">
                     <div class="col">
                         <img src="images/humidity.png">
@@ -225,6 +225,28 @@
                 "<br>Longitude:" + position.coords.longitude;
 
         }
+    </script>
+
+
+    <script>
+        const apiKey = "f1709c8a15c23ac9e54c755bbea82604";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=lahore";
+
+        async function checkWeather() {
+            const response = await fetch(apiUrl + `appid=${apiKey}`);
+            var data = await response.json();
+            consloe.log(data);
+
+            document.querySelector(".city").innerHTML = data.name;
+            document.querySelector(".temp").innerHTML = data.main.temp;
+            document.querySelector(".humidity").innerHTML = data.main.humidity;
+            document.querySelector(".wind").innerHTML = data.wind.speed;
+
+
+        }
+        checkWeather();
+
+
     </script>
 </body>
 
