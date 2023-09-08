@@ -1,0 +1,9 @@
+body{
+    background-color: #010606;
+background-image: linear-gradient(90deg, #010606 0%, #0146b6 100%);
+    background-size: cover;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
