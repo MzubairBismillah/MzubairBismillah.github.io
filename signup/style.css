@@ -7,13 +7,13 @@
     align-items: center;
 }
 .form{
-    width: 350px;
+    width: 450px;
     height: 450px;
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(1px);
     border: 1px solid #72582c;
-    border-radius: 5px;
+    border-radius: 15px;
     align-items: center;
 
 }
@@ -22,6 +22,9 @@
     font-size: 20px;
     font-weight: 300;
     color: #fff;
+}
+.form label{
+    color: aliceblue;
 }
 .form .login{
     display: flex;
@@ -35,6 +38,7 @@
     outline: none;
     border-radius: 60px;
     font-size: 16px;
+    background-color: #fff;
 
 }
 .login input{
