@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  #taskForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  input[type="text"], select {
+    padding: 10px;
+    margin-right: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #taskList {
+    max-width: 600px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+  }
+  .taskItem {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .deleteBtn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  #timer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  #progressContainer {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  #progressBar {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #progress {
+    height: 100%;
+    width: 0;
+    background-color: #28a745;
+  }
+  #quoteBox {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+  }
+  #darkModeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  .dark-mode .taskItem {
+    background-color: #333;
+    color: white;
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyMate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="darkModeToggle">Toggle Dark Mode</button>
+  <h1>📘 StudyMate - Daily Study Tracker</h1>
+
+  <form id="taskForm">
+    <input type="text" id="taskInput" placeholder="Enter subject (e.g., OS)" />
+    <select id="durationInput">
+      <option value="30 min">30 min</option>
+      <option value="1 hour">1 hour</option>
+      <option value="2 hours">2 hours</option>
+      <option value="3 hours">3 hours</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <div id="timer">
+    ⏱️ Timer: <span id="time">0</span> sec
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <div id="progressContainer">
+    <div id="progressBar">
+      <div id="progress"></div>
+    </div>
+  </div>
+
+  <div id="quoteBox">"Push yourself, because no one else is going to do it for you."</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
