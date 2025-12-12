@@ -1,198 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zubair portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mystyle.css">
-    <link rel="stylesheet" href="bootstrap-5.3.1-examples/">
+    <title>Zubair Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Load Tailwind CSS (Styling Framework) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Lucide Icons is library for icons  -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+   
+    <style>
+    </style>
+ </head>
 
-    <meta name="description" content="zubair portfolio">
-    <meta name="author" content="Zubair Bismillah">
+ <body class="bg-slate-950 min-h-screen text-slate-200 font-sans selection:bg-yellow-500 selection:text-black">
 
-</head>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
 
-<body>
-    <header>
-        <nav class="container">
-            <div class="left">Zubair portfolio</div>
-            <div><img class="image-first" src="/first page/circle.png" alt="zubair"></div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/project/index..html">projects</a></li>
-                    <li><a href="contact me/" target="_blank">Contact me</a></li>
-                </ul>
+           <!-- Left Side: Profile Photo + Brand Name -->
+            <a href="#" class="group flex items-center gap-3">
+                
+                <!-- NEW: Navbar Profile Photo (Where you circled RED) -->
+                <div class="relative w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-yellow-500 shadow-[0_0_15px_rgba(234,179,8,0.5)] group-hover:scale-110 transition-transform duration-300">
+                    <!-- Replace src with your local file like 'zubair.jpg' -->
+                    <img 
+                        src="\first page\img.jpg" 
+                        alt="Profile" 
+                        class="w-full h-full object-cover"
+                    >
+                </div>
+
+                <span class="text-2xl md:text-3xl font-extrabold tracking-tight">
+                    <span class="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 bg-clip-text text-transparent group-hover:from-yellow-300 group-hover:to-orange-400 transition-all duration-300">
+                        Zubair Portfolio
+                    </span>
+                    <span class="text-yellow-500">.</span>
+                </span>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="#about" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">About</a>
+                <a href="#skills" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Skills</a>
+                <a href="#education" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Education</a>
+                <a href="/project/index..html" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Projects</a>
+                <a href="#contact" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Contact</a>
+                
+                <!-- Github Button -->
+                <a href="https://github.com/MzubairBismillah" target="_blank" class="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-slate-200 transition-colors">
+                    GitHub
+                </a>
             </div>
-        </nav>
-    </header>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-slate-950 border-b border-slate-800 p-6 flex flex-col gap-4 shadow-xl">
+            <a href="#about" class="mobile-link text-slate-300 hover:text-white text-lg font-medium">About</a>
+            <a href="#skills" class="mobile-link text-slate-300 hover:text-white text-lg font-medium">Skills</a>
+            <a href="#education" class="mobile-link text-slate-300 hover:text-white text-lg font-medium">Education</a>
+            <a href="#work" class="mobile-link text-slate-300 hover:text-white text-lg font-medium">Projects</a>
+            <a href="#contact" class="mobile-link text-slate-300 hover:text-white text-lg font-medium">Contact</a>
+        </div>
+    </nav>
+
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                <div class="profile"><img class="image" src="/first page/profile.jpg" alt="profile"></div>
-                <div>Hi,My Name is <span class="yellow ">Zubair Bismillah</span></div>
-                <div> I'M a student and </div>
-                <span id="element"></span>
-                <div> i live in <i><q> Jandiranwala Mitru</q>
-                        <div class="buttons">
-                            <button class="btn">Download Resume</button>
-                            <button class="btn"><a
-                                    href="https://github.com/MzubairBismillah/MzubairBismillah.github.io.git">Visit
-                                    Github</a>
-                            </button>
-                        </div>
-                </div>
-            </div>
-            <div class="rightSecton"> </div>
-            <img src="/first page/zu.png.png" alt="programmer" class="img-right">
-            <hr class="main">
-        </section>
-        <section class="secondSection">
-            <span class="text-gray"> What i have done for</span>
-            <h1>Work Experience </h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="/first page/program.png" alt="nothing">
-                    <div class="vertical-title">Study intermediate(2020-2022)</div>
-                    <div class="vertical-desc">
-                        i study in Ics and get good marks.During that time, i know about C++ and basic computer
-                        things...
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <!-- Background Glow Effects -->
+            <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-yellow-600/20 rounded-full blur-[120px] -z-10"></div>
+            <div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-purple-600/20 rounded-full blur-[120px] -z-10"></div>
+
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700 text-yellow-400 text-sm font-medium">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+                        </span>
+                        Student & Freelancer
                     </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="/first page/university.png" alt="nothing">
-                    <div class="vertical-title">BSCS(2022-present)</div>
-                    <div class="vertical-desc">
-                        i know about Python and Java in this time.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="/first page/html.png" alt="nothing">
-                    <div class="vertical-title">Web Developer(2023-present)</div>
-                    <div class="vertical-desc">
-                        i know about web Developing almost and doing practice on it so that i become a good developer
-                        one day. Inshallah
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="/first page/editor.png" alt="nothing">
-                    <div class="vertical-title">Video Editor(2019-present)</div>
-                    <div class="vertical-desc">
-                        i have good grip in video Editor.i Edit many video like 'CITYS' 'villages' 'firends'
-                        'School docomentrys'.Also personal video many more.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="third-section">
-            <h4 class="head4">Academic</h4>
-            <table class="table">
-                <tr>
-                    <th>Degree Name </th>
-                    <th>institution</th>
-                    <th>Obtain Marks</th>
-                    <th>Total Marks</th>
-                    <th>position</th>
-                </tr>
-                <tr>
-                    <td>Matric(2018-2020)</td>
-                    <td>G.H.H.School mitru</td>
-                    <td>947</td>
-                    <td>1100</td>
-                    <td>3<sup>rd</sup>
-                        Understand the world</td>
-                </tr>
-                <tr>
-                    <td>Inter(2020-2022)</td>
-                    <td>G.H.H.School mitru</td>
-                    <td>984</td>
-                    <td>1100</td>
-                    <td>1<sup>st</sup>
-                        Lots of love too</td>
-                </tr>
-                <tr>
-                    <td>BSCS(2022-2026)</td>
-                    <td>UE ,Vehari</td>
-                    <td>3.22 CGPA</td>
-                    <td>4CGPA</td>
-                    <td>i win many hearts because i love to win everyone hearts Hahaha...ummmm</td>
-
-                </tr>
-
-            </table>
-
-            
-            <footer class="footer">
-                <div class="footer-first">
-                    <h4>Get your location</h4>
-                    <button onclick="getLocation()">MY location</button>
-                    <p id="demo">
-
+                    
+                    <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight">
+                        Hi, I'm <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400">
+                            Zubair Bismillah
+                        </span>
+                    </h1>
+                    
+                    <p class="text-slate-400 text-lg md:text-xl max-w-lg leading-relaxed">
+                        Web Developer & Video Editor based in Jandiranwala Mitru. 
+                        I bridge the gap between code and creativity, crafting digital experiences and visual stories.
                     </p>
-                    <h3>zubair portfolio</h3>
-                </div>
-                <div class="footer-second">
-                    <ul>
-                        <li><a href="https://www.facebook.com/roman.reign.7923030" target="_blank">Fackbook</a></li>
-                        <li><a href="https://twitter.com/muhamma22715948" target="_blank"> Twitter</a></li>
-                        <li><a href="muhammad.zubair010303@gmail.com" target="_blank">Gmail</a></li>
-                    </ul>
-                </div>
-                <div class="footer-third">
-                    <ul>
-                        <li><a href="https://www.instagram.com/zub1304/" target="_blank"> Instagram</a></li>
-                        <li><a href="https://www.youtube.com/channel/UC7DyCVV9nFkwVXekWZJfZoA" target="_blank">
-                                Youtude</a>
-                        </li>
-                    </ul>
 
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#work" class="px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black rounded-lg font-bold transition-all flex items-center gap-2">
+                            View Work <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <!-- Resume Button placeholder -->
+                        <button class="px-8 py-4 bg-slate-900 border border-slate-700 hover:border-slate-500 text-white rounded-lg font-bold transition-all">
+                            Download Resume
+                        </button>
+                    </div>
                 </div>
 
+                <!-- Code Block Visual -->
+                <div class="relative hidden md:block group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-purple-500 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                    <div class="relative bg-slate-900 border border-slate-700 rounded-2xl p-6 shadow-2xl transform rotate-3 transition-transform duration-500 group-hover:rotate-0">
+                        <div class="flex gap-2 mb-4">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="space-y-3 font-mono text-sm">
+                             <div class="flex">
+                                <span class="text-pink-500 mr-2">const</span>
+                                <span class="text-blue-400 mr-2">portfolio</span>
+                                <span class="text-slate-400">=</span>
+                                <span class="text-slate-400"> {</span>
+                            </div>
+                            <div class="pl-4">
+                                <span class="text-slate-400 mr-2">name:</span>
+                                <span class="text-green-400">"Zubair Bismillah"</span>
+                                <span class="text-slate-400">,</span>
+                            </div>
+                            <div class="pl-4">
+                                <span class="text-slate-400 mr-2">role:</span>
+                                <span class="text-orange-400">["Developer", "Video Editor"]</span>
+                                <span class="text-slate-400">,</span>
+                            </div>
+                            <div class="pl-4">
+                                <span class="text-slate-400 mr-2">location:</span>
+                                <span class="text-yellow-400">"Pakistan"</span>
+                            </div>
+                            <div class="text-slate-400">}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="footer-fourth">
-                    <address>Address;
-                        <i>'Mitru,District Verhari,Tehsil mailsi, Punjab Pakistan'</i>
-                    </address>
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-slate-950 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">About Me</h2>
+                <div class="prose prose-lg prose-invert mx-auto text-slate-400 leading-relaxed">
+                    <p class="mb-6">
+                        I am currently a student pursuing my BSCS, but my passion extends beyond the classroom. 
+                        I have been editing videos since 2019, creating documentaries for cities, villages, and schools.
+                    </p>
+                    <p class="mb-6">
+                        Since 2023, I have been diving deep into Web Development. I've mastered the basics of C++, Python, and Java, 
+                        and I am constantly practicing to become a top-tier developer.
+                    </p>
+                    <div class="flex justify-center items-center gap-2 text-yellow-500 font-medium">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        <span>Jandiranwala Mitru, District Vehari, Punjab Pakistan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 bg-slate-900 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">My Skillset</h2>
+                    <p class="text-slate-400 max-w-2xl">
+                        A blend of technical programming knowledge and creative video production skills.
+                    </p>
                 </div>
 
-                <div class="footer-right">
-                    Copyright &#169www.zubairportfolio.com | All web reserved
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Development Skills -->
+                    <div class="bg-slate-950/50 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 transition-colors">
+                        <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-yellow-400 mb-4">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Web Development</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>HTML & CSS</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>JavaScript</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>Web Design</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>Framework(Bootstrap,React,Angular)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Programming Skills -->
+                    <div class="bg-slate-950/50 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 transition-colors">
+                        <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-yellow-400 mb-4">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Programming</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>Python</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>model Training</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>C++</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>OOP Concepts</li>
+                        </ul>
+                    </div>
+
+                    <!-- Creative Skills -->
+                    <div class="bg-slate-950/50 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 transition-colors">
+                        <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-yellow-400 mb-4">
+                            <i data-lucide="video"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Creative</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>Video Editing</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>Content Creation</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>Storytelling</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>Documentaries</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools Skills -->
+                    <div class="bg-slate-950/50 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 transition-colors">
+                        <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-yellow-400 mb-4">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Tools</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>VS Code</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>GitHub</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>Video Editors</li>
+                            <li class="flex items-center gap-2 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>MS Office</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-24 bg-slate-950 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-12 text-center">Academic History</h2>
+                
+                <div class="space-y-8">
+                    <!-- BSCS Degree -->
+                    <div class="flex flex-col md:flex-row gap-6 p-6 bg-slate-900 rounded-2xl border border-slate-800 hover:border-yellow-500/50 transition-colors">
+                        <div class="md:w-1/4">
+                             <span class="inline-block px-3 py-1 rounded bg-slate-800 text-yellow-400 text-sm font-bold">
+                               2022 - Present
+                             </span>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-2xl font-bold text-white mb-1">BSCS (Bachelor of Computer Science)</h3>
+                            <div class="flex items-center gap-2 text-slate-400 mb-4">
+                                <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                                UE, Vehari
+                            </div>
+                            <p class="text-slate-400 leading-relaxed">
+                                Currently pursuing. CGPA: 3.22/4.0. Learning Python, Java, and Basic computing concepts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="flex flex-col md:flex-row gap-6 p-6 bg-slate-900 rounded-2xl border border-slate-800 hover:border-yellow-500/50 transition-colors">
+                        <div class="md:w-1/4">
+                             <span class="inline-block px-3 py-1 rounded bg-slate-800 text-yellow-400 text-sm font-bold">
+                               2020 - 2022
+                             </span>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-2xl font-bold text-white mb-1">Intermediate (ICS)</h3>
+                            <div class="flex items-center gap-2 text-slate-400 mb-4">
+                                <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                                Govt. Collage Mitru
+                            </div>
+                            <p class="text-slate-400 leading-relaxed">
+                                Secured 1st Position. Marks: 984/1100. Studied C++ and Computer Basics.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Matric -->
+                    <div class="flex flex-col md:flex-row gap-6 p-6 bg-slate-900 rounded-2xl border border-slate-800 hover:border-yellow-500/50 transition-colors">
+                        <div class="md:w-1/4">
+                             <span class="inline-block px-3 py-1 rounded bg-slate-800 text-yellow-400 text-sm font-bold">
+                               2018 - 2020
+                             </span>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-2xl font-bold text-white mb-1">Matriculation</h3>
+                            <div class="flex items-center gap-2 text-slate-400 mb-4">
+                                <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                                G.H.H. School Mitru
+                            </div>
+                            <p class="text-slate-400 leading-relaxed">
+                                Secured 3rd Position. Marks: 947/1100.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="work" class="py-24 bg-slate-900 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Featured Work</h2>
+                        <p class="text-slate-400">Highlights from my coding and editing career.</p>
+                    </div>
+                    <!-- Github Link -->
+                    <a href="https://github.com/MzubairBismillah" target="_blank" class="hidden md:flex items-center gap-2 text-yellow-400 font-medium hover:text-yellow-300 transition-colors">
+                        View Github <i data-lucide="github" class="w-4 h-4"></i>
+                    </a>
                 </div>
 
-            </footer>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Project 1: Video Production -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 hover:border-slate-700 transition-all flex flex-col">
+                        <div class="h-32 bg-gradient-to-br from-red-500 to-orange-500 opacity-80 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+                            <div class="bg-slate-950/30 backdrop-blur-sm p-3 rounded-lg">
+                                <i data-lucide="globe" class="text-white w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors">Video Production</h3>
+                            <p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">Professional video editing for city tours, village documentaries, and school events. Bringing stories to life through visual narratives.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">Video Editing</span>
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">Documentary</span>
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">Content Creation</span>
+                            </div>
+                            <a href="https://www.youtube.com/channel/UC7DyCVV9nFkwVXekWZJfZoA" class="inline-flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all">
+                                View Project <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Web Dev -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 hover:border-slate-700 transition-all flex flex-col">
+                        <div class="h-32 bg-gradient-to-br from-blue-500 to-cyan-400 opacity-80 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+                            <div class="bg-slate-950/30 backdrop-blur-sm p-3 rounded-lg">
+                                <i data-lucide="globe" class="text-white w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors">Web Development Journey</h3>
+                            <p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">My personal exploration into web technologies, building responsive layouts and interactive elements.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">HTML/CSS</span>
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">JavaScript</span>
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">Portfolio</span>
+                            </div>
+                            <a href="https://github.com/MzubairBismillah" class="inline-flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all">
+                                View Project <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: University -->
+                    <div class="group relative rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 hover:border-slate-700 transition-all flex flex-col">
+                        <div class="h-32 bg-gradient-to-br from-purple-500 to-pink-500 opacity-80 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+                            <div class="bg-slate-950/30 backdrop-blur-sm p-3 rounded-lg">
+                                <i data-lucide="globe" class="text-white w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors">University Projects</h3>
+                            <p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">Academic projects developed during my BSCS degree, focusing on algorithms and logic.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">C++</span>
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">Python</span>
+                                <span class="px-2 py-1 bg-slate-900 text-slate-300 text-xs font-medium rounded-full border border-slate-800">Java</span>
+                            </div>
+                            <a href="#" class="inline-flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all">
+                                View Project <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-gradient-to-b from-slate-900 to-slate-950 px-6 border-t border-slate-900">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                        Let's Connect
+                    </h2>
+                    <p class="text-slate-400 text-lg mb-8">
+                        Whether you need a website built or a video edited, I am available for freelance work. 
+                        Reach out on social media or send me an email.
+                    </p>
+                    
+                    <div class="flex gap-4">
+                        <a href="mailto:muhammad.zubair010303@gmail.com" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.facebook.com/roman.reign.7923030" target="_blank" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-[#1877F2] hover:text-white transition-all">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://twitter.com/muhamma22715948" target="_blank" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-[#1DA1F2] hover:text-white transition-all">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.instagram.com/zub1304/" target="_blank" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-[#E4405F] hover:text-white transition-all">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC7DyCVV9nFkwVXekWZJfZoA" target="_blank" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-[#FF0000] hover:text-white transition-all">
+                            <i data-lucide="youtube" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formspree Contact Form -->
+                <form action="https://formspree.io/f/xwkdrwnv" method="POST" class="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-2xl space-y-4">
+                    <div>
+                        <label class="block text-slate-400 text-xs font-bold uppercase mb-2">Name</label>
+                        <input type="text" name="name" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-white focus:border-yellow-500 outline-none transition-colors" />
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-xs font-bold uppercase mb-2">Email</label>
+                        <input type="email" name="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-white focus:border-yellow-500 outline-none transition-colors" />
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-xs font-bold uppercase mb-2">Message</label>
+                        <textarea name="message" required rows="4" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-white focus:border-yellow-500 outline-none transition-colors"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 text-black font-bold py-4 rounded-lg transition-all shadow-lg shadow-yellow-900/20">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', '&amp;Video Editor.'],
-            typeSpeed: 100,
-        });
-    </script>
-    <script>
-        const myElement = document.getElementById("demo");
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                myElement.innerHTML = "You Disallow location icon";
-            }
-        }
 
-        function showPosition(position) {
-            myElement.innerHTML = "Latitude:" + position.coords.latitude +
-                "<br>Longitude:" + position.coords.longitude;
-
-        }
-    </script>
-
+    <footer class="bg-slate-950 py-8 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <p>© 2025 Zubair Portfolio. All rights reserved.</p>
+    </footer>
 
    
-</body>
+ </body>
 
 </html>
+
