@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat vs Dog Classifier</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+
+    <div class="floating-stickers">
+        <i class="fas fa-cat"></i>
+        <i class="fas fa-dog"></i>
+        <i class="fas fa-paw"></i>
+        <i class="fas fa-cat"></i>
+        <i class="fas fa-bone"></i>
+        <i class="fas fa-dog"></i>
+        <i class="fas fa-fish"></i>
+        <i class="fas fa-paw"></i>
+        <i class="fas fa-cat"></i>
+        <i class="fas fa-dog"></i>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-paw"></i> Pet Detector</h1>
+            <p>Is it a Cat or a Dog? Let Model decide.</p>
+        </header>
+
+        <div class="upload-area" id="drop-area">
+            <div class="icon-container">
+                <i class="fas fa-images"></i>
+            </div>
+            <h3>Drag & Drop Photo</h3>
+            <p>or</p>
+            <button class="upload-btn" onclick="document.getElementById('file-input').click()">Browse Gallery</button>
+            <input type="file" id="file-input" accept="image/*" hidden>
+        </div>
+
+        <div class="preview-container hidden" id="preview-container">
+            <div class="image-wrapper">
+                <img id="image-preview" src="" alt="Preview" crossorigin="anonymous">
+                <div class="scan-overlay hidden" id="scan-overlay">
+                    <div class="scan-line"></div>
+                </div>
+            </div>
+            <button class="analyze-btn" id="analyze-btn">Identify Pet</button>
+        </div>
+
+        <div class="loader-container hidden" id="loader">
+            <div class="spinner"></div>
+            <p id="loading-text">Loading Brain...</p>
+        </div>
+
+        <div class="result-container hidden" id="result-card">
+            <div class="result-icon-container">
+                <div class="result-icon" id="result-icon"></div>
+                <div class="sound-wave hidden" id="sound-wave">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            
+            <h2 id="result-label">Result</h2>
+            
+            <div class="confidence-wrapper">
+                <p>AI Confidence</p>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-bar"></div>
+                </div>
+                <span id="confidence-score">0%</span>
+            </div>
+            
+            <button class="reset-btn" id="reset-btn">Check Another</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
